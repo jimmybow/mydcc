@@ -1,0 +1,5 @@
+include mydcc/bundle.js
+include mydcc/bundle.js.map
+include mydcc/metadata.json
+include README.md
+include LICENSE.md

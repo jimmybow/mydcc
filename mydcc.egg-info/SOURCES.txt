@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+mydcc/__init__.py
+mydcc/bundle.js
+mydcc/metadata.json
+mydcc/version.py
+mydcc.egg-info/PKG-INFO
+mydcc.egg-info/SOURCES.txt
+mydcc.egg-info/dependency_links.txt
+mydcc.egg-info/temp-plot.html
+mydcc.egg-info/top_level.txt
