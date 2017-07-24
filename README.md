@@ -94,8 +94,8 @@ app.layout = html.Div([
 def myfun(ddd):
     data = {'x':[1], 'y':[1]}
     if ddd['x'] != '' :
-        data = dict(x = [ddd['x']],
-                    y = [ddd['y']],
+        data = dict(x = [ ddd['x'] ],
+                    y = [ ddd['y'] ],
                     mode = 'markers',
                     opacity = 1
                     )
