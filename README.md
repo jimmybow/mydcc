@@ -18,8 +18,8 @@ app.layout = html.Div([
 @app.callback(
     Output('text', 'children'),
     [Input('uuu', 'data')])
-def myfun(x):
-    return x
+def myfun(ddd):
+    return str(ddd['x']) + ' and ' + str(ddd['y']) 
 ```
 
 # 2. mydcc.Listener_mapbox : 
@@ -36,8 +36,8 @@ app.layout = html.Div([
 @app.callback(
     Output('text', 'children'),
     [Input('uuu', 'data')])
-def myfun(x):
-    return x 
+def myfun(ddd):
+    return str(ddd['x']) + ' and ' + str(ddd['y']) 
 ```
 
 # 3. mydcc.Relayout : 
