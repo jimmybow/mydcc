@@ -71,21 +71,21 @@ Usage :
 ```
 app.layout = html.Div([
     dcc.Graph(
-        id='graph',    
-        figure={
+        id = 'graph',    
+        figure = {
             'data': [
-                {'x': [1, 2, 3], 'y': [4, 1, 2],
-                 'mode':"marker"},
+                { 'x': [1, 2, 3], 'y': [4, 1, 2],
+                  'mode': "marker" },
             ],
             'layout': {
                 'title': 'Dash Data Visualization',
-                'xaxis': {'range':[0,50]},
-                'yaxis': {'range':[0,50]}
+                'xaxis': { 'range': [0,50] },
+                'yaxis': { 'range': [0,50] }
             }
         }
     ),
     mydcc.Listener(id = "uuu", aim = 'graph'),
-    mydcc.Change_trace(id = 'ii',aim = 'graph')
+    mydcc.Change_trace(id = 'ii', aim = 'graph')
 ])
 
 @app.callback(
