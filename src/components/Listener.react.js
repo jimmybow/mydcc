@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 export default class Listener extends Component {    
     render() {
        const {id, aim , style, data, setProps} = this.props;
-       if (document.getElementById(aim) && data == '') {
+       if (document.getElementById(aim) && data.x == '') {
          var gd = document.getElementById(aim);
-         setProps( {data: 'activate'} );
+         setProps( {data: {x : "act", y : "act" }} );
          gd.addEventListener('mousemove', function(evt) {
                var xaxis = gd._fullLayout.xaxis;
                var yaxis = gd._fullLayout.yaxis;
@@ -17,7 +17,8 @@ export default class Listener extends Component {
                var offt = gd.offsetTop;
                var xInDataCoord = xaxis.p2c(evt.x - l - offl);
                var yInDataCoord = yaxis.p2c(evt.y - t - offt);                        
-               setProps( {data: xInDataCoord +' and '+ yInDataCoord}  ); 
+               setProps( {data: {x : xInDataCoord,
+                                 y : yInDataCoord } }  ); 
          });   
        }
          
@@ -31,9 +32,9 @@ Listener.propTypes = {
     id : PropTypes.string.isRequired,
     aim : PropTypes.string.isRequired,
     style: PropTypes.object,
-    data : PropTypes.string
+    data : PropTypes.object
 };
 
 Listener.defaultProps = {
-    data : ''  
+    data : {x : "", y : "" }  
 }        

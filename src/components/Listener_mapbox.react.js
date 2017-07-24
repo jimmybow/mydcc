@@ -5,17 +5,18 @@ import PropTypes from 'prop-types';
 export default class Listener_mapbox extends Component {    
     render() {
        const {id, aim , style, data, setProps} = this.props;
-       if (document.getElementById(aim) && data == '') {
+       if (document.getElementById(aim) && data.x == '') {
          var gd = document.getElementById(aim);
          var xaxis = gd._fullLayout.mapbox._subplot.xaxis;
          var yaxis = gd._fullLayout.mapbox._subplot.yaxis;
          var l = gd._fullLayout.margin.l;
          var t = gd._fullLayout.margin.t; 
-         setProps( {data: 'activate'} );
+         setProps( {data: {x : "act", y : "act" }} );
          gd.addEventListener('mousemove', function(evt) {
                var xInDataCoord = xaxis.p2c(evt.x - l);
                var yInDataCoord = yaxis.p2c(evt.y - t);                        
-               setProps( {data: xInDataCoord +' and '+ yInDataCoord}  ); 
+               setProps( {data: {x : xInDataCoord,
+                                 y : yInDataCoord } }  ); 
          });   
        }
          
@@ -29,9 +30,9 @@ Listener_mapbox.propTypes = {
     id : PropTypes.string.isRequired,
     aim : PropTypes.string.isRequired,
     style: PropTypes.object,
-    data : PropTypes.string
+    data : PropTypes.object
 };
 
 Listener_mapbox.defaultProps = {
-    data : ''  
+    data : {x : "", y : "" }   
 }        

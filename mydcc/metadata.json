@@ -1,4 +1,42 @@
 {
+  "src/components/Change_trace.react.js": {
+    "description": "",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "aim": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "data": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{x:[0], y:[0]}",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
   "src/components/ExampleComponent.react.js": {
     "description": "ExampleComponent is an example component.\r\nIt takes a single property, `label`, and\r\ndisplays it.",
     "methods": [],
@@ -39,12 +77,12 @@
       },
       "data": {
         "type": {
-          "name": "string"
+          "name": "object"
         },
         "required": false,
         "description": "",
         "defaultValue": {
-          "value": "''",
+          "value": "{x : \"\", y : \"\" }",
           "computed": false
         }
       }
@@ -77,12 +115,12 @@
       },
       "data": {
         "type": {
-          "name": "string"
+          "name": "object"
         },
         "required": false,
         "description": "",
         "defaultValue": {
-          "value": "''",
+          "value": "{x : \"\", y : \"\" }",
           "computed": false
         }
       }
