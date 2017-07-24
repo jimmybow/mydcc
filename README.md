@@ -64,6 +64,44 @@ def myfun(x):
     return {'title':x}
 ```
 
+# 4. mydcc.Change_trace : 
+Change plotly graph trace (only for graph with one trace )
+
+Usage :
+```
+app.layout = html.Div([
+    dcc.Graph(
+        id='graph',    
+        figure={
+            'data': [
+                {'x': [1, 2, 3], 'y': [4, 1, 2],
+                 'mode':"marker"},
+            ],
+            'layout': {
+                'title': 'Dash Data Visualization',
+                'xaxis': {'range':[0,50]},
+                'yaxis': {'range':[0,50]}
+            }
+        }
+    ),
+    mydcc.Listener(id = "uuu", aim = 'graph'),
+    mydcc.Change_trace(id = 'ii',aim = 'graph')
+])
+
+@app.callback(
+    Output('ii', 'data'),
+    [Input('uuu', 'data')])
+def myfun(ddd):
+    data = {'x':[1], 'y':[1]}
+    if ddd['x'] != '' :
+        data = dict(x = [ddd['x']],
+                    y = [ddd['y']],
+                    mode = 'markers',
+                    opacity = 1
+                    )
+    return data
+```
+
 ## Dash
 
 Go to this link to learn about [Dash][].
