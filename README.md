@@ -74,8 +74,7 @@ app.layout = html.Div([
         id = 'graph',    
         figure = {
             'data': [
-                { 'x': [1, 2, 3], 'y': [4, 1, 2],
-                  'mode': "marker" },
+                { 'x': [1, 2, 3], 'y': [4, 1, 2] },
             ],
             'layout': {
                 'title': 'Dash Data Visualization',
@@ -96,7 +95,6 @@ def myfun(ddd):
     if ddd['x'] != '' :
         data = dict(x = [ ddd['x'] ],
                     y = [ ddd['y'] ],
-                    mode = 'markers',
                     opacity = 1
                     )
     return data
