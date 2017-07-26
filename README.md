@@ -100,6 +100,31 @@ def myfun(ddd):
     return data
 ```
 
+# 5. mydcc.Change_trace_mapbox : 
+Change plotly mapbox graph trace (only for graph with one trace )
+
+Usage :
+```
+app.layout = html.Div([
+    dcc.Graph( id = 'graph', figure = figgure_with_mapbox ),
+    mydcc.Listener_mapbox(id = "uuu", aim = 'graph'),
+    mydcc.Change_trace_mapbox(id = 'ii', aim = 'graph')
+])
+
+@app.callback(
+    Output('ii', 'data'),
+    [Input('uuu', 'data')])
+def myfun(ddd):
+    data = {'lon':[1], 'lat':[1], 'type': 'scattermapbox'}
+    if type(ddd['x']) != str :
+        data = dict(lon = [ ddd['x'] ],
+                    lat = [ ddd['y'] ],
+                    type = 'scattermapbox',
+                    opacity = 1
+                    )
+    return data
+```
+
 ## Dash
 
 Go to this link to learn about [Dash][].
