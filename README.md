@@ -92,7 +92,7 @@ app.layout = html.Div([
     [Input('uuu', 'data')])
 def myfun(ddd):
     data = {'x':[1], 'y':[1]}
-    if ddd['x'] != '' :
+    if type(ddd['x']) != str :
         data = dict(x = [ ddd['x'] ],
                     y = [ ddd['y'] ],
                     opacity = 1
