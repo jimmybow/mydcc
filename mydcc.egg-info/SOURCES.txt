@@ -1,5 +1,6 @@
 MANIFEST.in
 README.md
+setup.cfg
 setup.py
 mydcc/__init__.py
 mydcc/bundle.js

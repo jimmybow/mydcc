@@ -7,7 +7,7 @@ export default class Listener extends Component {
        const {id, aim , style, data, setProps} = this.props;
        if (document.getElementById(aim) && data.x == '') {
          var gd = document.getElementById(aim);
-         setProps( {data: {x : "act", y : "act" }} );
+         setProps( {data: {x : 'act', y : 'act' }} );
          gd.addEventListener('mousemove', function(evt) {
                var xaxis = gd._fullLayout.xaxis;
                var yaxis = gd._fullLayout.yaxis;
@@ -36,5 +36,5 @@ Listener.propTypes = {
 };
 
 Listener.defaultProps = {
-    data : {x : "", y : "" }  
+    data : {x : '', y : '' }  
 }        
