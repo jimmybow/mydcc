@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 
 export default class Relayout extends Component {    
     render() {
-       const {id, aim, layout, style} = this.props;
+       const {id, aim, layout, style, setProps} = this.props;
        if (document.getElementById(aim) && layout.disable == null) {
          var gd = document.getElementById(aim);
          Plotly.relayout(gd, layout);
+         if (setProps) setProps( {layout: {disable:'yes'} }  );  
        
        }
          
@@ -24,5 +25,5 @@ Relayout.propTypes = {
 };
 
 Relayout.defaultProps = {
-    layout : {'title':''}  
+    layout : {disable:'yes'}   
 }        

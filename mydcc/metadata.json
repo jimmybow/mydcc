@@ -24,7 +24,7 @@
         "required": false,
         "description": "",
         "defaultValue": {
-          "value": "{x:[0], y:[0]}",
+          "value": "{disable:'yes'}",
           "computed": false
         }
       },
@@ -62,7 +62,7 @@
         "required": false,
         "description": "",
         "defaultValue": {
-          "value": "{lat:[1], lon:[1], type: 'scattermapbox'}",
+          "value": "{disable:'yes'}",
           "computed": false
         }
       },
@@ -189,7 +189,7 @@
         "required": false,
         "description": "",
         "defaultValue": {
-          "value": "{'title':''}",
+          "value": "{disable:'yes'}",
           "computed": false
         }
       },

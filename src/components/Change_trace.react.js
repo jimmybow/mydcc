@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 
 export default class Change_trace extends Component {    
     render() {
-       const {id, aim, data, style} = this.props;
+       const {id, aim, data, style, setProps} = this.props;
        if (document.getElementById(aim) && data.disable == null) {
          var gd = document.getElementById(aim);
          if (gd.data[0] != null) Plotly.deleteTraces(gd, 0);
          Plotly.addTraces(gd, data);
+         if (setProps) setProps( {data: {disable:'yes'} }  );         
        }
        return (
             <div id = {id} style = {style}></div>
@@ -23,5 +24,5 @@ Change_trace.propTypes = {
 };
 
 Change_trace.defaultProps = {
-    data : {x:[0], y:[0]}  
+    data : {disable:'yes'}  
 }        
