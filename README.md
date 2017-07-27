@@ -97,6 +97,7 @@ def myfun(ddd):
                     y = [ ddd['y'] ],
                     opacity = 1
                     )
+    if ddd['x'] > 30 : data.update( {'disable':'y'} )                
     return data
 ```
 
