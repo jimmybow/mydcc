@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default class Change_trace extends Component {    
     render() {
        const {id, aim, data, style} = this.props;
-       if (document.getElementById(aim)) {
+       if (document.getElementById(aim) && data.disable == null) {
          var gd = document.getElementById(aim);
          if (gd.data[0] != null) Plotly.deleteTraces(gd, 0);
          Plotly.addTraces(gd, data);

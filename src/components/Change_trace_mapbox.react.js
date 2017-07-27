@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default class Change_trace_mapbox extends Component {    
     render() {
        const {id, aim, data, style} = this.props;
-       if (document.getElementById(aim)) {
+       if (document.getElementById(aim) && data.disable == null) {
          var gd = document.getElementById(aim);
          Plotly.addTraces(gd, data);
          Plotly.deleteTraces(gd, 0);

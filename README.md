@@ -92,12 +92,11 @@ app.layout = html.Div([
     [Input('uuu', 'data')])
 def myfun(ddd):
     data = {'x':[1], 'y':[1]}
-    if type(ddd['x']) != str :
+    if ddd['x'] != '' :
         data = dict(x = [ ddd['x'] ],
                     y = [ ddd['y'] ],
                     opacity = 1
                     )
-    if ddd['x'] > 30 : data.update( {'disable':'y'} )                 
     return data
 ```
 
