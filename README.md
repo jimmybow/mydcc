@@ -5,6 +5,15 @@ My Dash Core Components
 ```
 pip install mydcc
 ```
+
+# Requirements：
+
+* **dash** -- The core dash backend
+* **dash-renderer** -- The dash front-end
+* **dash-html-components** -- HTML components
+* **dash-core-components** -- Supercharged components
+* **plotly** -- Plotly graphing library used in examples
+
 # Usage :
 ```
 import dash
@@ -24,15 +33,6 @@ def myfun(...):
 if __name__ == '__main__':
     app.run_server()
 ```
-
-# Requirements：
-
-* **dash** -- The core dash backend
-* **dash-renderer** -- The dash front-end
-* **dash-html-components** -- HTML components
-* **dash-core-components** -- Supercharged components
-* **plotly** -- Plotly graphing library used in examples
-
 
 # 1. mydcc.Listener : 
 Get mouse position of plotly graph
