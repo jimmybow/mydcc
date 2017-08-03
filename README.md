@@ -1,39 +1,7 @@
-# Mydcc
-My Dash Core Components 
-
 # Installing :
 ```
 pip install mydcc
 ```
-
-# Requirements：
-
-* **dash** -- The core dash backend
-* **dash-renderer** -- The dash front-end
-* **dash-html-components** -- HTML components
-* **dash-core-components** -- Supercharged components
-* **plotly** -- Plotly graphing library used in examples
-
-# Usage :
-```
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
-from dash.dependencies import Input, Output, Event, State
-import mydcc
-
-app = dash.Dash()
-app.layout = html.Div(...)
-
-@app.callback(...)
-def myfun(...):
-    ...
-    return ...
-
-if __name__ == '__main__':
-    app.run_server()
-```
-
 # 1. mydcc.Listener : 
 Get mouse position of plotly graph
 
