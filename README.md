@@ -7,13 +7,13 @@ pip install mydcc
 ```
 
 # Requirements
-```
-* dash -- The core dash backend
-* dash-renderer==0.7.4 -- The dash front-end
-* dash-html-components -- HTML components
-* dash-core-components -- Supercharged components
-* plotly -- Plotly graphing library used in examples
-```
+
+* **dash** -- The core dash backend
+* **dash-renderer** -- The dash front-end
+* **dash-html-components** -- HTML components
+* **dash-core-components** -- Supercharged components
+* **plotly** -- Plotly graphing library used in examples
+
 
 # 1. mydcc.Listener : 
 Get mouse position of plotly graph
