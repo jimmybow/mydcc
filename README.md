@@ -6,7 +6,7 @@ My Dash Core Components
 pip install mydcc
 ```
 
-# Requirements
+# Requirements：
 
 * **dash** -- The core dash backend
 * **dash-renderer** -- The dash front-end
