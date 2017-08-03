@@ -14,13 +14,9 @@ from dash.dependencies import Input, Output, Event, State
 import mydcc
 
 app = dash.Dash()
-app.layout = html.Div(
-    ......
-)
+app.layout = html.Div(...)
 
-@app.callback(
-    ......
-)
+@app.callback(...)
 def myfun(...):
     ...
     return ...
@@ -28,7 +24,6 @@ def myfun(...):
 if __name__ == '__main__':
     app.run_server()
 ```
-
 
 # Requirements：
 
