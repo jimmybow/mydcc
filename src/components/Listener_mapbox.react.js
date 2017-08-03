@@ -11,12 +11,12 @@ export default class Listener_mapbox extends Component {
          var yaxis = gd._fullLayout.mapbox._subplot.yaxis;
          var l = gd._fullLayout.margin.l;
          var t = gd._fullLayout.margin.t; 
-         setProps( {data: {x : 'act', y : 'act' }} );
+         if (setProps) setProps( {data: {x : 'act', y : 'act' }} );
          gd.addEventListener('mousemove', function(evt) {
                var xInDataCoord = xaxis.p2c(evt.x - l);
                var yInDataCoord = yaxis.p2c(evt.y - t);                        
-               setProps( {data: {x : xInDataCoord,
-                                 y : yInDataCoord } }  ); 
+               if (setProps) setProps( {data: {x : xInDataCoord,
+                                               y : yInDataCoord } }  ); 
          });   
        }
          
