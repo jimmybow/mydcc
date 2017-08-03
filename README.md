@@ -5,6 +5,30 @@ My Dash Core Components
 ```
 pip install mydcc
 ```
+# Usage :
+```
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output, Event, State
+import mydcc
+
+app = dash.Dash()
+app.layout = html.Div(
+    ......
+)
+
+@app.callback(
+    ......
+)
+def myfun(...):
+    ...
+    return ...
+
+if __name__ == '__main__':
+    app.run_server()
+```
+
 
 # Requirements：
 
