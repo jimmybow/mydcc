@@ -70,6 +70,7 @@ app.layout = html.Div([
     Output('text', 'children'),
     [Input('uuu', 'data')])
 def myfun(ddd):
+    if ddd is None : return('')
     return str(ddd['x']) + ' and ' + str(ddd['y']) 
 ```
 
