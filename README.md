@@ -71,7 +71,7 @@ app.layout = html.Div([
     [Input('uuu', 'data')])
 def myfun(ddd):
     if ddd is None : return('')
-    return str(ddd['x']) + ' and ' + str(ddd['y']) 
+    else: return( str(ddd['x']) + ' and ' + str(ddd['y']) )
 ```
 
 # 3. mydcc.Relayout : 
