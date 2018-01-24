@@ -51,7 +51,8 @@ app.layout = html.Div([
     Output('text', 'children'),
     [Input('uuu', 'data')])
 def myfun(ddd):
-    return str(ddd['x']) + ' and ' + str(ddd['y']) 
+    if ddd is None : return('')
+    else: return( str(ddd['x']) + ' and ' + str(ddd['y'])  )
 ```
 
 # 2. mydcc.Listener_mapbox : 
