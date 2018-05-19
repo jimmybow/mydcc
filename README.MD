@@ -1,6 +1,13 @@
 # Mydcc
 My Dash Core Components 
 
+- [Installing](#installing-)
+- [Requirements](#requirements)
+- [Usage](#usage-)
+- [visdcc.Network](#1-visdccnetwork-)
+- [visdcc.DataTable](#2-visdccdatatable-)
+- [Learning more about dash ...](#dash)  
+
 # Installing :
 ```
 pip install mydcc
