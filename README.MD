@@ -23,6 +23,7 @@ pip install mydcc
 * **dash-html-components** -- HTML components
 * **dash-core-components** -- Supercharged components
 * **plotly** -- Plotly graphing library used in examples
+
 [↑](#mydcc)
 # Usage :
 ```
