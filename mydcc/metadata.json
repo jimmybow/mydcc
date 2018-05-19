@@ -1,6 +1,7 @@
 {
   "src/components/Change_trace.react.js": {
     "description": "",
+    "displayName": "Change_trace",
     "methods": [],
     "props": {
       "id": {
@@ -39,6 +40,7 @@
   },
   "src/components/Change_trace_mapbox.react.js": {
     "description": "",
+    "displayName": "Change_trace_mapbox",
     "methods": [],
     "props": {
       "id": {
@@ -77,6 +79,7 @@
   },
   "src/components/ExampleComponent.react.js": {
     "description": "ExampleComponent is an example component.\r\nIt takes a single property, `label`, and\r\ndisplays it.",
+    "displayName": "ExampleComponent",
     "methods": [],
     "props": {
       "label": {
@@ -90,6 +93,7 @@
   },
   "src/components/Listener.react.js": {
     "description": "",
+    "displayName": "Listener",
     "methods": [],
     "props": {
       "id": {
@@ -128,6 +132,7 @@
   },
   "src/components/Listener_mapbox.react.js": {
     "description": "",
+    "displayName": "Listener_mapbox",
     "methods": [],
     "props": {
       "id": {
@@ -166,6 +171,7 @@
   },
   "src/components/Relayout.react.js": {
     "description": "",
+    "displayName": "Relayout",
     "methods": [],
     "props": {
       "id": {
@@ -187,11 +193,7 @@
           "name": "object"
         },
         "required": false,
-        "description": "",
-        "defaultValue": {
-          "value": "{disable:'yes'}",
-          "computed": false
-        }
+        "description": ""
       },
       "style": {
         "type": {
