@@ -4,8 +4,11 @@ My Dash Core Components
 - [Installing](#installing-)
 - [Requirements](#requirements)
 - [Usage](#usage-)
-- [visdcc.Network](#1-visdccnetwork-)
-- [visdcc.DataTable](#2-visdccdatatable-)
+- [mydcc.Listener](#1-mydcclistener-)
+- [mydcc.Listener_mapbox](#2-mydcclistener_mapbox-)
+- [mydcc.Relayout](#3-mydccrelayout-)
+- [mydcc.Change_trace](#4-mydccchange_trace-)
+- [mydcc.Change_trace_mapbox](#5-mydccchange_trace_mapbox-)
 - [Learning more about dash ...](#dash)  
 
 # Installing :
