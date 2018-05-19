@@ -4,11 +4,11 @@ My Dash Core Components
 - [Installing](#installing-)
 - [Requirements](#requirements)
 - [Usage](#usage-)<br>
-  [1. mydcc.Listener](#1-mydcclistener-)<br>
-  [2. mydcc.Listener_mapbox](#2-mydcclistener_mapbox-)<br>
-  [3. mydcc.Relayout](#3-mydccrelayout-)<br>
-  [4. mydcc.Change_trace](#4-mydccchange_trace-)<br>
-  [5. mydcc.Change_trace_mapbox](#5-mydccchange_trace_mapbox-)<br>
+[1. mydcc.Listener](#1-mydcclistener-)<br>
+[2. mydcc.Listener_mapbox](#2-mydcclistener_mapbox-)<br>
+[3. mydcc.Relayout](#3-mydccrelayout-)<br>
+[4. mydcc.Change_trace](#4-mydccchange_trace-)<br>
+[5. mydcc.Change_trace_mapbox](#5-mydccchange_trace_mapbox-)<br>
 - [Learning more about dash ...](#dash)  
 
 # Installing :
