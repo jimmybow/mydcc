@@ -3,7 +3,7 @@ My Dash Core Components
 
 - [Installing](#installing-)
 - [Requirements](#requirements)
-- [Usage](#usage-)
+- [Usage](#usage-)<br>
   [1. mydcc.Listener](#1-mydcclistener-)<br>
   [2. mydcc.Listener_mapbox](#2-mydcclistener_mapbox-)<br>
   [3. mydcc.Relayout](#3-mydccrelayout-)<br>
