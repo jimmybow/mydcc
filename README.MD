@@ -168,6 +168,6 @@ def myfun(ddd):
                     )
     return data
 ```
-↑(#mydcc)
-## Dash
+
+## Dash [↑](#mydcc)
 Go to this link to learn about [Dash](https://plot.ly/dash/).
