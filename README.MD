@@ -23,7 +23,7 @@ pip install mydcc
 * **dash-html-components** -- HTML components
 * **dash-core-components** -- Supercharged components
 * **plotly** -- Plotly graphing library used in examples
-
+[↑](#mydcc)
 # Usage :
 ```
 import dash
@@ -43,7 +43,7 @@ def myfun(...):
 if __name__ == '__main__':
     app.run_server()
 ```
-
+[↑](#mydcc)
 # 1. mydcc.Listener : 
 Get mouse position of plotly graph
 
@@ -64,7 +64,7 @@ def myfun(ddd):
     if ddd is None : return('')
     return str(ddd['x']) + ' and ' + str(ddd['y']) 
 ```
-
+[↑](#mydcc)
 # 2. mydcc.Listener_mapbox : 
 Get mouse position for plotly mapbox graph 
 
@@ -83,7 +83,7 @@ def myfun(ddd):
     if ddd is None : return('')
     return str(ddd['x']) + ' and ' + str(ddd['y']) 
 ```
-
+[↑](#mydcc)
 # 3. mydcc.Relayout : 
 Relayout plotly graph
 
@@ -107,7 +107,7 @@ app.layout = html.Div([
 def myfun(x):
     return {'title':x}
 ```
-
+[↑](#mydcc)
 # 4. mydcc.Change_trace : 
 Change plotly graph trace (only for graph with one trace )
 
@@ -143,7 +143,7 @@ def myfun(ddd):
                     )
     return data
 ```
-
+[↑](#mydcc)
 # 5. mydcc.Change_trace_mapbox : 
 Change plotly mapbox graph trace (only for graph with one trace )
 
@@ -168,6 +168,6 @@ def myfun(ddd):
                     )
     return data
 ```
-
-## Dash [↑](#mydcc)
+[↑](#mydcc)
+## Dash
 Go to this link to learn about [Dash](https://plot.ly/dash/).
